@@ -1,3 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: times, "Times New Roman";
+
+
+}
+
 
 * {
     margin: 0;
@@ -6,13 +13,34 @@
     /* red border guide*/
     /*border: 1px red solid;*/
     /*global font styling*/
-    font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+
 
 body {
-    background-color:  white;
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
 }
+body.correct {
+    --hue: var(--hue-correct);
+}
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
 
 /* button styling*/
 button {
@@ -41,6 +69,7 @@ h1, h2 {
 /* Navigation section*/
 .nav-bar p {
     float: right;  
+    border-radius: 8px;
 }
 
 /* Inner container section styling*/
@@ -48,7 +77,7 @@ h1, h2 {
     background: rgba(200, 200, 200, 0.4);
     height: 100%;
     width: 50%;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +85,11 @@ h1, h2 {
 
 
 /*Header quiz content*/
+
+/*.quiz-start-content, main, p {
+    margin: 5px;
+}*/
+
 
 .quiz-start-content, main {
     display: block;
@@ -70,11 +104,11 @@ h1, h2 {
 
 .quiz-start-content button {
     display: block;
-    width: 40%;
-    margin: 0 auto;
+    width: 25%;
+    margin: 10vh auto;
     cursor: default;
     background-color: rgb(200, 26, 65);
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
 }
 
