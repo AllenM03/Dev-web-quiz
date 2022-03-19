@@ -1,14 +1,41 @@
 //Start with an array of questions. Make them look like this:
 //var questions = [
   //{
-    //question: "What is your most used name in the world?",
+    //question-1: "What is your most used name in the world?",
     //choices: { a: "Muhammad", b: "Michael", c: "James", d: "Bob" },
    // answer: "a",
  // },
+
+    {
+        //question-2: "Substances that have a definite size and shape, and vibrating particles that are close together are:?",
+        //choices: { a: "Liquids", b: "Gases", c: "Solids", d: "Ether" },
+       // answer: "c",
+     // },
+
+     {
+        //question-3: "Where in the US is the “Petrified Forest?",
+        //choices: { a: "Arizona", b: "Arkansas", c: "California", d: "Nevada" },
+       // answer: "a",
+     // },
+
+     {
+        //question-4: "Which style of art was produced in, or under the influence of, the Eastern Roman Empire?",
+        //choices: { a: "Levantine", b: "Baroque", c: "Byzantine", d: "Constantinople" },
+       // answer: "c",
+     // },
+
+     {
+        //question-5: "The jelly-like substance that makes up most of a cell is the?",
+        //choices: { a: "Nucleus", b: "Chloroplast", c: "Cytoplasm", d: "Epidermis" },
+       // answer: "c",
+     // },
   ////...
 //]
 
 
+while (true) {
+    (response === answer)
+}
 
 //Then write a function called displayQuestion, which will put the first question’s text and choices into the html.  
 //At the end of the js file, call the displayQuestion function and get the first question to show up. 
