@@ -13,7 +13,7 @@
 
         <!--top bar section-->
         <div class="nav-bar">
-            <button>View Highscores</button>
+            <button class="high-scores-button">View Highscores</button>
             <p>Timer: 00:00</p>
         </div>
 
@@ -26,7 +26,7 @@
             <header class="quiz-start-content">
                 <h1>Coding Quiz Challenge</h1>  
                 <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-                <button>Start Quiz</button>
+                <button class="start-quiz-button">Start Quiz</button>
             </header>
 
             <!--main quiz content-->
@@ -34,16 +34,16 @@
 
             <!--Quiz Questions -->
 
-            <section class="questions-slides">
+            <section class="#question-pages">
                 <h2>Questions here</h2>
                 <ul>
-                    <li><button>Answer 1</button></li>
-                    <li><button>Answer 2</button></li>
-                    <li><button>Answer 3</button></li>
-                    <li><button>Answer 4</button></li>
+                    
                 </ul>
+                <footer id="quiz-feedback">
+                  <a>Incorrect</a>
+                </footer>
             </section>
-d
+            
             <section class="quiz-complete-content">
                 <h2>Quiz Finished!</h2>
                 <p>Your Score: 00</p>               
@@ -57,12 +57,12 @@ d
             <!-- Quiz Finish Section to be generated in js -->
             <section class="highscores-screen">
                 <h2>High Scores</h2>
-                <ol>
+                <ul>
                   <li>AMB - 30</li>
                   <li>AMB - 30</li>
                   <li>AMB - 30</li>
                   <li>AMB - 30</li>
-                </ol>
+                </ul>
                 <button>Go Back</button>
                 <button>Clear High Scores</button>
             </section>
