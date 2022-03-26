@@ -73,9 +73,9 @@ for (let i = 0; i < questions.length; i++) {
     displayQuestion()    
  })
     document.querySelector("#choices").appendChild(button)
-
     }
 }
+
 /*
     const response = window.prompt(questions[i].prompt);
     if(response == questions [i].answer){
