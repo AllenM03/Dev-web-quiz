@@ -94,7 +94,7 @@ h1, h2 {
 
 /* Main quiz content */
 
-main {
+.hide-content {
     display: none;
 }
 

@@ -25,36 +25,39 @@ const questions = [
   {
         question: "What is the most used name in the world?",
         choices: [ "Muhammad","Michael","James","Bob"],
-        answer: Muhammad
+        answer: "Muhammad"
     },
 
     {
         question: "Substances that have a definite size and shape, and vibrating particles that are close together are:",
         choices: ["Liquids","Gases","Solids","Ether"],
-        answer: Solids
+        answer: "Solids"
     },
 
     {
         question: "Where in the US is the “Petrified Forest?",
         choices: ["Arizona","Arkansas","California","Nevada"],
-        answer: Arizona
+        answer: "Arizona"
     },
 
     {
         question: "Which style of art was produced in, or under the influence of, the Eastern Roman Empire?",
         choices: ["Levantine","Baroque","Byzantine","Constantinople"],
-        answer: Byzantine
+        answer: "Byzantine"
     },
 
      {
         question: "The jelly-like substance that makes up most of a cell is the?",
         choices: ["Nucleus","Chloroplast","Cytoplasm","Epidermis"],
-        answer: Cytoplasm
+        answer: "Cytoplasm"
      }
   ]
-
-document.querySelector("#start").addEventListener("click", function(){
-    displayQuestion()
+///add function to hide title screen and show the first question/// pick up where I left off here for showing first question
+document.querySelector(".start-quiz-button").addEventListener("click", function(){
+document.querySelector("main").classList.remove("hide-content")
+document.querySelector("#question-pages").appendChild.const("questions")  
+console.log("print"); 
+//displayQuestion()
 })
 
 
@@ -75,6 +78,7 @@ for (let i = 0; i < questions.length; i++) {
     document.querySelector("#choices").appendChild(button)
     }
 }
+
 
 /*
     const response = window.prompt(questions[i].prompt);
